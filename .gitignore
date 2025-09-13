@@ -5,6 +5,7 @@
 # Xcode
 #
 build/
+android/app/google-services.json
 *.pbxuser
 !default.pbxuser
 *.mode1v3
