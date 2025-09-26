@@ -22,6 +22,7 @@ DerivedData
 *.xcuserstate
 **/.xcode.env.local
 utils
+android/app/google-services.json
 
 # Android/IntelliJ
 #
