@@ -8,10 +8,19 @@ import AppNavigator from './src/navigation/AppNavigator';
 import AuthNavigator from './src/navigation/AuthNavigator';
 import { GoogleSignin } from '@react-native-google-signin/google-signin';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import {OneSignal, LogLevel} from 'react-native-onesignal';
 
 const App = () => {
   const [initializing, setInitializing] = useState(true);
   const [user, setUser] = useState(null);
+  const OneSignalInitialization = () => {
+    OneSignal.Debug.setLogLevel(LogLevel.Verbose);
+    // Initialize with your OneSignal App ID
+    OneSignal.initialize('ff3a95a1-b19d-4dcc-8878-d7ed769a9122');
+    // Use this method to prompt for push notifications.
+    // We recommend removing this method after testing and instead use In-App Messages to prompt for notification permission.
+    OneSignal.Notifications.requestPermission(false);
+  };
 
   useEffect(() => {
     GoogleSignin.configure({
@@ -21,6 +30,7 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    OneSignalInitialization();
     const subscriber = auth().onAuthStateChanged(currentUser => {
       setUser(currentUser);
       if (initializing) setInitializing(false);

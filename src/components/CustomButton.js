@@ -23,9 +23,9 @@ export default CustomButton;
 const styles = StyleSheet.create({
   button: {
     backgroundColor: COLORS.primary, 
-    paddingVertical: height * 0.018, // responsive vertical padding
-    paddingHorizontal: width * 0.06, // responsive horizontal padding
-    borderRadius: width * 0.035, // responsive border radius
+    paddingVertical: height * 0.018, 
+    paddingHorizontal: width * 0.06, 
+    borderRadius: width * 0.035, 
     alignItems: 'center',
     justifyContent: 'center',
     elevation: 6,
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
   text: {
     color: '#fff',
-    fontSize: width * 0.04, // responsive font size
+    fontSize: width * 0.04, 
     fontFamily: FONTS.extraBold, 
     textAlign: 'center',
   },
@@ -45,6 +45,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   icon: {
-    marginLeft: width * 0.025, // responsive spacing for icons
+    marginLeft: width * 0.025, 
   },
 });

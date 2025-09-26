@@ -27,7 +27,7 @@ const TermsAndConditions = () => {
         showsVerticalScrollIndicator={true}
       >
         <Text style={styles.text}>
-          Welcome to our Yoga App. Please read these Terms and Conditions
+          Welcome to Study Buddy. Please read these Terms and Conditions
           carefully before using our app:
         </Text>
         <View style={styles.bulletContainer}>
@@ -36,36 +36,42 @@ const TermsAndConditions = () => {
             comply with and be bound by these terms.
           </Text>
           <Text style={styles.bulletText}>
-            {'\u2022'} Use of App: You must be at least 18 years old to use this
-            app. The app is intended for personal, non-commercial use.
+            {'\u2022'} Use of App: Study Buddy is designed for educational and
+            personal learning purposes only. Commercial use without permission
+            is prohibited.
           </Text>
           <Text style={styles.bulletText}>
-            {'\u2022'} Health Disclaimer: Yoga involves physical activity.
-            Consult your physician before starting any new fitness program. The
-            app is not responsible for any injuries or health issues arising
-            from your use.
+            {'\u2022'} AI Responses: The app provides AI-generated content.
+            While we strive for accuracy, responses may not always be correct or
+            complete. Always double-check important information.
           </Text>
           <Text style={styles.bulletText}>
-            {'\u2022'} Content Ownership: All content, videos, and images in
-            this app are owned by us or our licensors. Do not copy, reproduce,
-            or distribute without permission.
+            {'\u2022'} User Responsibility: You are responsible for how you use
+            the information provided. Do not rely solely on the app for exams,
+            assignments, or professional advice.
           </Text>
           <Text style={styles.bulletText}>
-            {'\u2022'} User Conduct: You agree not to misuse the app, post
-            harmful content, or engage in any illegal activities.
+            {'\u2022'} Data Privacy: We may collect basic user information to
+            improve services. Your data will be handled in accordance with our
+            Privacy Policy and will not be sold to third parties.
           </Text>
           <Text style={styles.bulletText}>
-            {'\u2022'} Privacy: Your data is handled according to our Privacy
-            Policy. By using the app, you consent to the collection and use of
-            data as described.
+            {'\u2022'} Content Ownership: All app features, designs, and content
+            are owned by the developers. Do not copy, redistribute, or modify
+            without permission.
+          </Text>
+          <Text style={styles.bulletText}>
+            {'\u2022'} Prohibited Use: You agree not to misuse the app,
+            including attempts to hack, spam, or upload harmful content.
           </Text>
           <Text style={styles.bulletText}>
             {'\u2022'} Termination: We reserve the right to suspend or terminate
-            your access for violation of terms.
+            your access for violating these terms or engaging in abusive
+            behavior.
           </Text>
           <Text style={styles.bulletText}>
             {'\u2022'} Changes to Terms: We may update these Terms at any time.
-            Continued use of the app indicates acceptance of changes.
+            Continued use of the app means you accept the changes.
           </Text>
         </View>
         <Text style={[styles.text, { marginTop: 10 }]}>
