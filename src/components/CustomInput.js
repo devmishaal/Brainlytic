@@ -13,7 +13,7 @@ import { COLORS, FONTS } from '../styles/globalstyle';
 const { width, height } = Dimensions.get('window');
 
 const CustomInput = ({
-  placeholder,
+   placeholder,
   placeholderTextColor = COLORS.textSecondary,
   keyboardType,
   text,
@@ -21,6 +21,8 @@ const CustomInput = ({
   onChangeText,
   secureTextEntry,
   isPassword = false,
+  multiline = false,
+  style,
 }) => {
   const [showPassword, setShowPassword] = useState(false);
 
@@ -46,6 +48,7 @@ const CustomInput = ({
             )}
           </TouchableOpacity>
         )}
+        
       </View>
     </View>
   );
@@ -56,23 +59,23 @@ export default CustomInput;
 const styles = StyleSheet.create({
   label: {
     fontFamily: FONTS.medium,
-    fontSize: width * 0.04, // responsive font size
+    fontSize: width * 0.04, 
     color: COLORS.textPrimary,
-    marginBottom: height * 0.005, // responsive spacing
+    marginBottom: height * 0.005, 
   },
   inputWrapper: {
     borderWidth: 1,
     borderColor: COLORS.border,
-    paddingHorizontal: width * 0.04, // responsive padding
-    paddingVertical: height * 0.004, // responsive vertical padding
-    borderRadius: width * 0.035, // responsive border radius
+    paddingHorizontal: width * 0.04, 
+    paddingVertical: height * 0.004, 
+    borderRadius: width * 0.035, 
     backgroundColor: COLORS.cardBackground,
     flexDirection: 'row',
     alignItems: 'center',
   },
   input: {
     fontFamily: FONTS.regular,
-    fontSize: width * 0.04, // responsive font size
+    fontSize: width * 0.04, 
     color: COLORS.textPrimary,
   },
 });

@@ -17,18 +17,19 @@ export const COLORS = {
 };
 
 export const FONTS = {
-  regular: 'Roboto-Regular',
-  medium: 'Roboto-Medium',
-  semiBold: 'Roboto-SemiBold',
-  bold: 'Roboto-Bold',
-  extraBold: 'Roboto-ExtraBold',
+  regular: 'Poppins-Regular',
+  medium: 'Poppins-Medium',
+  semiBold: 'Poppins-SemiBold',
+  bold: 'Poppins-Bold',
+  extraBold: 'Poppins-ExtraBold',
 };
 
 export const globalStyles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: COLORS.background,
-    paddingHorizontal: width * 0.0,
+    // paddingHorizontal: 16,
+    // paddingVertical: 18,
   },
   titleText: {
     fontFamily: FONTS.bold,
