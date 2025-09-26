@@ -22,7 +22,6 @@ DerivedData
 *.xcuserstate
 **/.xcode.env.local
 utils
-android/app/google-services.json
 
 # Android/IntelliJ
 #
@@ -36,7 +35,6 @@ local.properties
 *.keystore
 !debug.keystore
 .kotlin/
-android/app/google-services.json
 
 # node.js
 #
